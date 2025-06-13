@@ -374,6 +374,66 @@ section:nth-of-type(even) h2::after {
   background: linear-gradient(135deg, #fa71cd, #c471f5);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* ✨ Contact Heading Style */
+.contact-heading {
+  position: relative;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.contact-heading::before,
+.contact-heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+.contact-heading::before {
+  left: -30px;
+  background-color: #00b4d8; /* Cyan */
+}
+
+.contact-heading::after {
+  right: -30px;
+  background-color: #ff6f61; /* Coral */
+}
+
+.contact-heading .emoji {
+  margin-left: 10px;
+  display: inline-block;
+  transform: translateY(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Visitor count display styling */
 .visitor-count {
   margin: 20px 0;
@@ -432,6 +492,20 @@ section:nth-of-type(even) h2::after {
 section h2::after {
   right: 10px !important;
   left: auto !important;
+  width: 4px !important;
+}
+
+
+
+
+
+  .contact-heading::before {
+  left: 10px !important;
+  width: 4px !important;
+}
+
+.contact-heading::after {
+  right: 10px !important;
   width: 4px !important;
 }
 
