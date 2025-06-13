@@ -387,6 +387,7 @@ section:nth-of-type(even) h2::after {
 
 /* ✨ Contact Heading Style */
 .contact-heading {
+  padding: 0 24px; /* 24px on both left and right */
   position: relative;
   display: inline-block;
   font-size: 28px;
@@ -457,6 +458,10 @@ section:nth-of-type(even) h2::after {
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
+   .contact-heading {
+    padding: 0 16px;
+  }
+  
   .split-hero {
     flex-direction: column;
     text-align: center;
@@ -500,12 +505,12 @@ section h2::after {
 
 
   .contact-heading::before {
-  left: 10px !important;
+  left: -10px !important;
   width: 4px !important;
 }
 
 .contact-heading::after {
-  right: 10px !important;
+  right: -10px !important;
   width: 4px !important;
 }
 
